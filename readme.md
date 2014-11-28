@@ -33,7 +33,8 @@
    这个时候就可以使用CountDownLatch。CountDownLatch最重要的方法是countDown()和await()，
    前者主要是倒数一次，后者是等待倒数到0，如果没有到达0，就只有阻塞等待了
 
-7. 线程安全的容器BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);
+7. 线程安全的阻塞性容器
+    BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(10);
          1)add(anObject):把anObject加到BlockingQueue里,即如果BlockingQueue可以容纳,则返回true,否则招聘异常
 
                 2)offer(anObject):表示如果可能的话,将anObject加到BlockingQueue里,即如果BlockingQueue可以容纳,则返回true,否则返回false.
